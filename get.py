@@ -7,10 +7,10 @@ import time
 import sqlite3
 
 # install the pyotp package first
-api_key = "023b8541-e5bd-4704-a568-e3aaa2d40f10"
+api_key = "xxx"
 
 # get a token that's valid right now
-my_secret = 'JGW7XV5TPVC36B5K'
+my_secret = 'xxx'
 my_token = pyotp.TOTP(my_secret)
 
 # print the valid token
@@ -33,7 +33,7 @@ for i in range(0, len(r["prices"])):
 con = sqlite3.connect('steam.db')
 cur = con.cursor()
 
-cookie = {'steamLoginSecure' : '76561198074179850%7C%7C6A30A5576C963A80A11EF2A61B2AACBFBB1B2D86'}
+cookie = {'steamLoginSecure' : 'xxx'}
 
 last_hash = cur.execute("SELECT hash FROM csgo ORDER BY hash DESC LIMIT 1").fetchall()[0][0]
 
