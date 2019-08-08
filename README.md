@@ -2,7 +2,7 @@
 
 A small  Counter-Strike : Global Offensive (https://blog.counter-strike.net/) historical item price tracker. It sources price data directly from the Steam Market, obtaining daily data for the existence period of said item. 
 
-It is composed by a Python script that sources item information (the so-called hash-name) from bitskins.com, using its api. For that, an API key first has to be acquired and changed directly in the code. Check out https://bitskins.com/api for more information.
+It is composed by a Python script that sources item information (the so-called hash-name) from bitskins.com, using its api. For that, an API key first has to be acquired and changed directly in the code. (Check out https://bitskins.com/api for more information.)
 
 This information is then used to call the steam market api, which requires the user to have a Steam Account. To use the Market API, one has to provide the code with the steamLoginSecure cookie related to the user's account. Using this cookie, the script queries the Steam Market API every 3 seconds, to avoid triggering the Steam scraping protection. (We can't confirm that lower values may trigger this protection, but we are sure 3 seconds for every call is enough.) The results are saved to a SQlite database called "steam.db", so be sure to have the sqlite package installed using pip.
 
