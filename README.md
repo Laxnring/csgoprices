@@ -1,6 +1,6 @@
 # csgoprices
 
-A small historical Counter-Strike:Global Offensive item price tracker. It sources price data directly from the Steam Market, obtaining daily data for the existence period of said item. 
+A small  Counter-Strike : Global Offensive (https://blog.counter-strike.net/) historical item price tracker. It sources price data directly from the Steam Market, obtaining daily data for the existence period of said item. 
 
 It is composed by a Python script that sources item information (the so-called hash-name) from bitskins.com, using its api. For that, an API key first has to be acquired and changed directly in the code. Check out https://bitskins.com/api for more information.
 
